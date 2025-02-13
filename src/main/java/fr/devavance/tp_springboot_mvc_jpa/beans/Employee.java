@@ -1,5 +1,8 @@
 package fr.devavance.tp_springboot_mvc_jpa.beans;
 
+import lombok.Data;
+
+@Data
 public class Employee {
     
     private String name;
@@ -9,9 +12,9 @@ public class Employee {
     private String email;
     
     private String phone;
-    
+
     private Fonction fonction;
-    
+
     public Employee(String name, String address, String email, String phone, Fonction fonction) {
         this.name = name;
         this.address = address;

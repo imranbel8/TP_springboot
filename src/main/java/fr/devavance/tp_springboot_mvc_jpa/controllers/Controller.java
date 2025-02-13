@@ -1,4 +1,4 @@
-package fr.devavance.tp_springboot_mvc_jpa.controllers;
+/*package fr.devavance.tp_springboot_mvc_jpa.controllers;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,4 +11,4 @@ public class Controller {
         model.addAttribute("name", "Capteur température");
         return "template1";
     }
-}
+}*/

@@ -1,6 +1,9 @@
 # TP sur SpringBoot - Dev Avancée R6.05 - Alexandre Meunier
 
 
+## Exercice 1 : Premier projet en utilisant le framework Spring Boot
+
+### Question 2: Commençons avec les bases de Spring Web MVC
 
 Rendez-vous sur http://localhost:8080/ pour vérifier que le serveur a démarré mais qu'une page d'erreur s'affiche (en effet rien n'indique la page racine / à utiliser).
 
@@ -14,6 +17,7 @@ Est-ce que l'une des pages suivantes est visible :
       La page temple1.html renvoie une erreur 404.
       Cependant, la page plain.html apparait correctement avec le contenue. Cela veut dire que les fichiers html dans le répertoire static sont comme des vues qui peuvent être appelé à tout moment
 
+### Question 3 : Mécanisme des templates
 
 A quoi correspond la chaîne renvoyé par la méthode getTemplate1() ?
 
@@ -26,4 +30,13 @@ Est-il absolument nécessaire que la méthode s'appelle getTemplate1() ?
 
 Quel rôle joue la page template1.html ?
 
-    Son role est d'afficher du html quand elle est appelé par le controller
+    Son role est d'afficher du html quand elle est appelé par le controller********
+
+
+## Exercice 2 : Listez et ajouter des employées
+
+### Question 3: Intéraction dans la vue
+
+Question : A quoi correpond la valeur retournée ?
+
+    La chaine retourné retourne la vue à afficher, cherché dans les templates.
