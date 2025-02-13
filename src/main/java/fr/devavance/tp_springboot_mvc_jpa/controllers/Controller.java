@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Controller {
 
     @RequestMapping("/")
-    public String getTemplate1(){
+    public String getTemplate1(Model model){
+        model.addAttribute("name", "Capteur température");
         return "template1";
     }
 }
