@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage employee</title>
+    <style>
+        * {margin: 0; padding: 0}
+        body {background-color: #fff;}
+        h1   {color: black; margin-block: 50px; margin-left: 25px;}
+    </style>
+</head>
+<body>
+    <h1>Fiche employée</h1>
+    <p><a href="/employee/home">Retourner</a></p>
+<!--
+<ul>
+    <li th:each="employee: ${employees}" th:text="${employee.name}" th:attr="style='background:' + ${employee.fonction.codeCouleur}"></li>
+</ul>
+-->
+    <table>
+        <tr>
+            <td>Nom :</td>
+            <td th:text="${employee.name}"></td>
+        </tr>
+        <tr>
+            <td>Adresse :</td>
+            <td th:text="${employee.address}"></td>
+        </tr>
+        <tr>
+            <td>Courriel :</td>
+            <td th:text="${employee.email}"></td>
+        </tr><tr>
+            <td>Téléphone :</td>
+            <td th:text="${employee.phone}"></td>
+        </tr>
+        <tr>
+            <td>Fonction :</td>
+            <td th:text="${employee.fonction}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
