@@ -35,7 +35,7 @@
         </tr>
         <tr>
             <td>Fonction :</td>
-            <td th:text="${employee.fonction}"></td>
+            <td th:text="${employee.fonction}" th:attr="style='background:' + ${employee.fonction.codeCouleur}"></td>
         </tr>
     </table>
 

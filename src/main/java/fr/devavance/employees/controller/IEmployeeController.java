@@ -1,6 +1,6 @@
-package fr.devavance.tp_springboot_mvc_jpa.controllers;
+package fr.devavance.employees.controller;
 
-import fr.devavance.tp_springboot_mvc_jpa.beans.Employee;
+import fr.devavance.employees.entity.Employee;
 import org.springframework.ui.Model;
 
 public interface IEmployeeController {

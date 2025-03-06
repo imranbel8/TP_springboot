@@ -1,12 +1,9 @@
-package fr.devavance.tp_springboot_mvc_jpa.dao;
+package fr.devavance.employees;
 
-import fr.devavance.tp_springboot_mvc_jpa.beans.Employee;
-import fr.devavance.tp_springboot_mvc_jpa.beans.Fonction;
+import fr.devavance.employees.repository.IEmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
 
 @Component
 class InitDataRepository implements CommandLineRunner {

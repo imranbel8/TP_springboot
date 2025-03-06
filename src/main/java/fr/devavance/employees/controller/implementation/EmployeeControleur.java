@@ -1,7 +1,8 @@
-package fr.devavance.tp_springboot_mvc_jpa.controllers;
+package fr.devavance.employees.controller.implementation;
 
-import fr.devavance.tp_springboot_mvc_jpa.beans.Employee;
-import fr.devavance.tp_springboot_mvc_jpa.dao.IEmployeeRepository;
+import fr.devavance.employees.entity.Employee;
+import fr.devavance.employees.controller.IEmployeeController;
+import fr.devavance.employees.repository.IEmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/employee")
-public class EmployeeControleur implements IEmployeeController{
+public class EmployeeControleur implements IEmployeeController {
 
     @Autowired
     private IEmployeeRepository employeeDAO;

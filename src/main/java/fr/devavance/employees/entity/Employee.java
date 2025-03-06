@@ -1,5 +1,6 @@
-package fr.devavance.tp_springboot_mvc_jpa.beans;
+package fr.devavance.employees.entity;
 
+import fr.devavance.employees.enumeration.Fonction;
 import jakarta.persistence.*;
 
 @Entity

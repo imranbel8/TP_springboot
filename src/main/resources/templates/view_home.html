@@ -15,9 +15,9 @@
 <body>
     <h1>Liste des employées</h1>
     <ul>
-        <li th:each="employee: ${employees}" th:attr="style='background:' + ${employee.fonction.codeCouleur}">
+        <li th:each="employee: ${employees}" >
             <a th:href="@{/employee/{id}(id=${employee.id})}" th:text="${employee.id}"></a>
-            <span th:text="${employee.name}"></span>
+            <span th:text="${employee.name}" th:attr="style='background:' + ${employee.fonction.codeCouleur}"></span>
         </li>
     </ul>
     <h1>Formulaire de l'ajout d'un employee</h1>
@@ -27,7 +27,7 @@
         <input type=text th:field="*{email}" placeholder="Courriel"/>
         <input type=text th:field="*{phone}" placeholder="Tél."/>
         <select th:field="*{fonction}">
-            <option th:each="fonction : ${T(fr.devavance.tp_springboot_mvc_jpa.beans.Fonction).values()}"
+            <option th:each="fonction : ${T(fr.devavance.employees.enumeration.Fonction).values()}"
                     th:value="${fonction}"
                     th:text="${fonction}">
             </option>

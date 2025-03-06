@@ -1,4 +1,4 @@
-package fr.devavance.tp_springboot_mvc_jpa;
+package fr.devavance.employees;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
